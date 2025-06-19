@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f8f6f2;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero-overlay h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.hero-overlay p {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1rem;
+  background-color: #f3f0ea;
+}
+.product {
+  text-align: center;
+}
+.product img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.skin-imagery {
+  padding: 4rem 1rem;
+}
+.skin-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.skin-grid figure {
+  margin: 0;
+  text-align: center;
+}
+.skin-grid img {
+  width: 300px;
+  height: auto;
+}
+
+.testimonials {
+  background-color: #f3f0ea;
+  padding: 4rem 1rem;
+  text-align: center;
+  font-style: italic;
+}
+.testimonial-slider blockquote {
+  margin: 0 0 1.5rem 0;
+}
+
+.newsletter {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.newsletter form {
+  margin-top: 1rem;
+}
+.newsletter input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  width: 250px;
+  max-width: 100%;
+}
+.newsletter button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+footer {
+  background-color: #e9e5de;
+  padding: 2rem 1rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-top nav a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #333;
+}
+.footer-top .social a {
+  margin-left: 0.75rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
